@@ -1,0 +1,568 @@
+@accent-color: #000000;
+@error-color: #FB654A;
+@secondary-text-color: #000000;
+
+// get the page ready
+* { outline: none; box-sizing: border-box; }
+body { padding: 0; margin: 0; color: white;}
+html, body { height: 640px; width:360px; position: relative; background: linear-gradient(180deg, #7E2080 0%, #A31FA6 100%); color:white; overflow:none; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+body, button, input {
+  font-family: "Montserrat", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-size: 1em;
+}
+h1, h2, h3, h4, h5, h6 {margin: 0; font-family: "Montserrat", "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;}
+h1 { font-size: 2.25em; font-weight: bold; color: white; font-family: 'Montserrat', sans-serif;}
+h2 { font-size: 1.75em; font-weight: normal; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;}
+h3 { font-size: 1.5em;  font-weight: normal; font-family: 'Montserrat', sans-serif;}
+h4 { font-size: 1.25em; font-weight: normal; font-family: 'Montserrat', sans-serif;}
+h5 { font-size: 1em;  font-weight: normal; font-family: 'Montserrat', sans-serif;}
+h6 { font-size: 1em;  font-weight: normal; font-family: 'Montserrat', sans-serif;}
+ul { list-style: none; margin: 0; padding: 0; }
+
+
+a {
+  &:visited, &:link {
+    color: @secondary-text-color;
+  }
+  &:hover, &:active {
+    color: @accent-color;
+  }
+}
+
+/**
+  *  LOGIN SCREEN
+  */
+
+.setlist-logo-name {
+	position: absolute;
+	width: 231px;
+	height: 228px;
+	left: 75px;
+	top: 79px;
+//	background: url(SETLIST_LOGO_NAME.png);
+}
+
+.btn-apple-login {
+	position: absolute;
+	width: 272px;
+	height: 48px;
+	left: 44px;
+	top: 427px;
+//	background: url(apple_login.png);
+}
+
+.sign-up-link {
+	position: absolute;
+	width: 180px;
+	height: 20px;
+	left: 146px;
+	top: 548px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	text-decoration-line: underline;
+	color: #FFFFFF;
+}
+
+.log-in-link {
+	position: absolute;
+	width: 192px;
+	height: 29px;
+	left: 86px;
+	top: 506px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	text-decoration-line: underline;
+	color: #FFFFFF;
+}
+
+.btn-spotify-login {
+  margin-right:auto;
+  margin-left:auto;
+  width:270px;
+  margin-top:70px;
+  padding:0;
+}
+
+.privacy-policy-label {
+	position: absolute;
+	width: 91px;
+	height: 23px;
+	left: 16px;
+	top: 612px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+}
+
+.terms-of-use-label {
+	position: absolute;
+	width: 98px;
+	height: 28px;
+	left: 270px;
+	top: 612px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+}
+
+/**
+  *  HOME SCREEN
+  */
+
+.setlist-logo {
+	position: absolute;
+	width: 230px;
+	height: 255.56px;
+	left: calc(50% - 230px/2);
+	top: 143px;
+//	background: url(SETLIST_LOGO.png);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 200px;
+}
+
+.ellipse-1 {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 143px;
+	top: 62px;
+	background: #C4C4C4;
+}
+
+.ellipse-2 {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 174px;
+	top: 62px;
+	background: #FFFFFF;
+}
+
+.ellipse-3 {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 205px;
+	top: 62px;
+	background: #C4C4C4;
+}
+
+.start-new-session-label {
+	position: absolute;
+	width: 285px;
+	height: 25px;
+	left: 43px;
+	top: 438px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+}
+
+.account-icon {
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	left: 37px;
+	top: 48px;
+}
+
+.account-label {
+	position: absolute;
+	width: 75px;
+	height: 12px;
+	left: 26px;
+	top: 92px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 12px;
+	color: #FFFFFF;
+}
+
+.join-session-label {
+	position: absolute;
+	width: 84px;
+	height: 13px;
+	left: 258px;
+	top: 94px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 12px;
+	/* identical to box height */
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.join-session-icon {
+	position: absolute;
+	width: 43px;
+	height: 40px;
+	left: 283px;
+	top: 46px;
+}
+
+/**
+  *  SETLIST CONFIGURATION SCREEN
+  */
+
+  .hamburger-menu {
+	position: absolute;
+	width: 30px;
+	height: 28px;
+	left: 29px;
+	top: 27px;
+}
+
+.btn-create-setlist {
+
+
+}
+
+.setlist-name-input-component {
+	position: absolute;
+	width: 271px;
+	height: 11px;
+	left: 42px;
+	top: 501px;
+	opacity: 0.9;
+}
+
+.cursor {
+	position: absolute;
+	width: 30px;
+	height: 0px;
+	left: 42px;
+	top: 474px;
+	opacity: 0.6;
+	border: 0.5px solid #FFFFFF;
+	transform: rotate(90deg);
+}
+
+.setlist-name-input {
+	position: absolute;
+	width: 181px;
+	height: 47px;
+	left: 47px;
+	top: 478px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 27px;
+	color: #FFFFFF;
+	opacity: 0.7;
+}
+
+.name-prompt-label {
+	position: absolute;
+	width: 218px;
+	height: 23px;
+	left: 42px;
+	top: 515px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+}
+
+.rectangle-1 {
+	position: absolute;
+	width: 360px;
+	height: 302px;
+	left: 0px;
+	top: 146px;
+	background: rgba(30, 30, 30, 0.91);
+}
+
+.line-1 {
+	position: absolute;
+	width: 360px;
+	height: 0px;
+	left: 0px;
+	top: 193px;
+	border: 0.7px solid #ACA8A8;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transform: rotate(0.16deg);
+}
+
+.presets-label {
+	position: absolute;
+	width: 56px;
+	height: 23px;
+	left: 14px;
+	top: 160px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+}
+
+.crowd-pleaser-label {
+	position: absolute;
+	width: 84px;
+	height: 23px;
+	left: 34px;
+	top: 307px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 12px;
+	color: #FFFFFF;
+}
+
+.hnav-bar {
+	position: absolute;
+	width: 362px;
+	height: 82px;
+	left: -1px;
+	top: 0px;
+	background: linear-gradient(180deg, rgba(196, 196, 196, 0.2) 0%, rgba(196, 196, 196, 0.078) 100%);
+	border: 0.5px solid #ACA8A8;
+	box-sizing: border-box;
+}
+/*
+.invite-friends-label {
+	position: absolute;
+	width: 82px;
+	height: 15px;
+	left: 225px;
+	top: 110px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+
+	text-align: center;
+	color: #FFFFFF;
+}
+
+*/
+
+.line-2 {
+	position: absolute;
+	width: 57px;
+	height: 0px;
+	left: 12px;
+	top: 182px;
+	border: 2px solid #A31FA6;
+}
+
+.img-crowd-pleaser-background {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 29px;
+	top: 223px;
+	background: #FFFFFF;
+}
+
+.img-crowd-pleaser {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 29px;
+	top: 223px;
+	background: linear-gradient(0deg, rgba(30, 30, 30, 0.25), rgba(30, 30, 30, 0.25)), url(applause-audience-band-196652 (1).jpg);
+	border: 1px solid #E149E4;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.invite-only-label {
+	position: absolute;
+	width: 72px;
+	height: 16px;
+	left: 14px;
+	top: 110px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+}
+
+.invite-only-rdo {
+	position: absolute;
+	width: 39px;
+	height: 41px;
+	left: 120.65px;
+	top: 137.99px;
+	transform: rotate(179.09deg);
+}
+
+/*
+.add-friends-icon {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 317px;
+	top: 106px;
+}
+
+.friends-icon-component {
+	position: absolute;
+	width: 56px;
+	height: 40px;
+	left: 283px;
+	top: 20px;
+}
+*/
+
+.scroller {
+	position: absolute;
+	width: 5px;
+	height: 70px;
+	left: 348px;
+	top: 206px;
+	background: #C4C4C4;
+	border-radius: 16px;
+}
+
+/**
+  *  LOADING SCREEN
+  */
+
+  .lds-roller {
+  	display: inline-block;
+  	position: relative;
+  	width: 97.54px;
+  	height: 97.54px;
+  	left: 131px;
+  	top: 222px;
+  }
+
+  .lds-roller div {
+  	animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  	transform-origin: 32px 32px;
+  }
+
+  .lds-roller div:after {
+  	content: " ";
+  	display: block;
+  	position: absolute;
+  	width: 6px;
+  	height: 6px;
+  	border-radius: 50%;
+  	background: #fff;
+  	margin: -3px 0 0 -3px;
+  }
+
+  .lds-roller div:nth-child(1) {
+  	animation-delay: -0.036s;
+  }
+
+  .lds-roller div:nth-child(1):after {
+  	top: 50px;
+  	left: 50px;
+  }
+
+  .lds-roller div:nth-child(2) {
+  	animation-delay: -0.072s;
+  }
+
+  .lds-roller div:nth-child(2):after {
+  	top: 54px;
+  	left: 45px;
+  }
+
+  .lds-roller div:nth-child(3) {
+  	animation-delay: -0.108s;
+  }
+
+  .lds-roller div:nth-child(3):after {
+  	top: 57px;
+  	left: 39px;
+  }
+
+  .lds-roller div:nth-child(4) {
+  	animation-delay: -0.144s;
+  }
+
+  .lds-roller div:nth-child(4):after {
+  	top: 58px;
+  	left: 32px;
+  }
+
+  .lds-roller div:nth-child(5) {
+  	animation-delay: -0.18s;
+  }
+
+  .lds-roller div:nth-child(5):after {
+  	top: 57px;
+  	left: 25px;
+  }
+
+  .lds-roller div:nth-child(6) {
+  	animation-delay: -0.216s;
+  }
+
+  .lds-roller div:nth-child(6):after {
+  	top: 54px;
+  	left: 19px;
+  }
+
+  .lds-roller div:nth-child(7) {
+  	animation-delay: -0.252s;
+  }
+
+  .lds-roller div:nth-child(7):after {
+  	top: 50px;
+  	left: 14px;
+  }
+
+  .lds-roller div:nth-child(8) {
+  	animation-delay: -0.288s;
+  }
+
+  .lds-roller div:nth-child(8):after {
+  	top: 45px;
+  	left: 10px;
+  }
+
+  @keyframes lds-roller {
+  	0% {
+  		transform: rotate(0deg);
+  	}
+  	100% {
+  		transform: rotate(360deg);
+  	}
+  }
+
+  .message-label {
+  	position: absolute;
+  	width: 284px;
+  	height: 28px;
+  	left: 62px;
+  	top: 365px;
+  	font-family: Montserrat;
+  	font-style: normal;
+  	font-weight: normal;
+  	font-size: 16px;
+  	line-height: 20px;
+  	color: #FFFFFF;
+  }

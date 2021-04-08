@@ -1,0 +1,1204 @@
+@accent-color: #000000;
+@error-color: #FB654A;
+@secondary-text-color: #000000;
+@small: 1199px;
+@large: 1200px;
+@xSmall: 576px;
+// @media screen and (max-width: $xSmall){
+
+// get the page ready
+* { outline: none; box-sizing: border-box; }
+body { padding: 0; margin: 0; color: white;}
+html, body { height: 110%; width: 100%; position: absolute; top: 0; right: 0; background: linear-gradient(to bottom, #7d1e80 60%, #a528a9 100%); color:white; }
+body, button, input {
+  font-family: "Montserrat", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-size: 1em;
+}
+h1, h2, h3, h4, h5, h6 {margin: 0; font-family: "Montserrat", "HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;}
+h1 { font-size: 2.25em; font-weight: normal; color: white; font-family: 'Montserrat', sans-serif;}
+h2 { font-size: 1.75em; font-weight: normal; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;}
+h3 { font-size: 1.5em;  font-weight: normal; font-family: 'Montserrat', sans-serif;}
+h4 { font-size: 1.25em; font-weight: normal; font-family: 'Montserrat', sans-serif;}
+h5 { font-size: 1em;  font-weight: normal; font-family: 'Montserrat', sans-serif;}
+h6 { font-size: 1em;  font-weight: normal; font-family: 'Montserrat', sans-serif;}
+ul { list-style: none; margin: 0; padding: 0; }
+
+
+a {
+  &:visited, &:link {
+    color: @secondary-text-color;
+  }
+  &:hover, &:active {
+    color: @accent-color;
+  }
+}
+
+label{
+  margin-top: 10%;
+  font-size: 25px;
+  padding-right: 8px;
+  padding-left: 9px;
+  text-align: center;
+  @media screen and (max-width: 576px){
+    font-size: 15px;
+  }
+
+  color: aliceblue;
+  font-family:"Montserrat", sans-serif;
+}
+
+.friends{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a{
+  color: rgb(255, 255, 255);
+  font-family:"Montserrat";
+}
+
+.login_block{
+  padding-bottom: 300px;
+}
+
+.link-block{
+  padding-top: 100px;
+  padding-right:50px;
+  padding-bottom:200px;
+  @media screen and (max-width: 576px){
+    padding-top:350px;
+  }
+}
+
+.login{
+  color:white;
+  font-family: 'Montserrat'
+}
+
+.share-session-btn{
+  position: relative;
+  text-align: center;
+  margin-right:auto;
+  margin-left:auto;
+  height: 50px;
+  width:270px;
+  margin-top:30px;
+  padding:0;
+}
+
+.lbl-login{
+  color:white;
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.lbl-sign-up{
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.lbl-privacy-policy{
+  margin-top: 150px;
+  margin-left: -10px;
+}
+
+.lbl-terms-of-use{
+  float:right;
+  margin-top: -25px;
+  margin-right: -10px;
+}
+
+.ready-btn{
+  position: relative;
+  text-align: center;
+  margin-right:auto;
+  margin-left:auto;
+  height: 50px;
+  width:270px;
+  margin-top:30px;
+  padding:0;
+}
+
+.share-session-button{
+  border-radius: 25px;
+  position: relative;
+  margin-right:auto;
+  margin-left:auto;
+  height: 50px;
+  width:270px;
+  // @media screen and (max-width: 576px){
+  //   width:220px;
+  // }
+  padding-right: 9px;
+  background: linear-gradient(to bottom, #7d1e80 60%, #a528a9 100%);
+  color: aliceblue;
+  font-family:"Montserrat", sans-serif;
+  font-size: 25px;
+  @media screen and (max-width: 576px){
+    font-size: 20px;
+  }
+  text-align: center;
+}
+
+
+
+.presets-label-copy{
+  position: absolute;
+width: 56px;
+height: 23px;
+margin-left: 5px;
+top: 160px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+}
+
+
+
+.invite-friends-component{
+  top:108px;
+}
+
+.audience-band-img{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  left: 13px;
+  top: 50px;
+  z-index: 1000;
+  cursor:pointer;
+}
+
+.crowd-pleaser-label{
+position: absolute;
+width: 84px;
+height: 23px;
+margin-top: -140px;
+margin-left: -8px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+
+color: #FFFFFF;
+}
+
+.ready-button{
+  border-radius: 25px;
+  position: relative;
+  margin-right:auto;
+  margin-left:auto;
+  height: 50px;
+  width:270px;
+  padding-right: 9px;
+  background-color: rgb(29, 185, 84);
+  color: aliceblue;
+  font-family:"Montserrat", sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+
+.form-group{
+  margin:auto;
+}
+
+.account-icon{
+  fill:white;
+  cursor:pointer;
+}
+
+.account-label{
+  padding:3px;
+  margin-left: -7px;
+}
+
+.account-component{
+  margin-left: -210px;
+  margin-top: -90px;
+  padding: 70px;
+
+}
+
+.join-session-icon{
+  fill:white;
+}
+
+.join-session-label{
+  padding:1px;
+  margin-left: -7px;
+
+}
+
+.join-session-component{
+  float:right;
+  margin-top: -139px;
+  margin-right:13px;
+}
+
+.friends-icon{
+  right: 28px;
+  cursor: pointer;
+}
+
+
+/**
+  *  SETLIST CONFIGURATION SCREEN
+  */
+
+
+  .hnav-bar {
+  height: 82px;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.2) 0%, rgba(196, 196, 196, 0.078) 100%);
+  border: 0.5px solid #ACA8A8;
+  }
+
+/*
+.hamburger-menu {
+position: absolute;
+width: 30px;
+height: 28px;
+left: 29px;
+top: 23px;
+}
+
+
+.friends-icon-component{
+  position: absolute;
+width: 56px;
+height: 40px;
+left: 283px;
+top: 20px;
+
+}
+
+
+.friends-icon{
+  position: absolute;
+  left: 28.57%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+*
+.friends-label{
+  position: absolute;
+  left: 1.79%;
+  right: 85.71%;
+  top: 37.5%;
+  bottom: 25%;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+
+*/
+.invite-friends-icon{
+  margin-top:-25px;
+  padding-left:100px;
+  width: 20px;
+  height: 24px;
+}
+
+.invite-friends-label{
+
+  margin-top:105px;
+}
+
+
+
+.console{
+  width: 360px;
+  height: 244px;
+  left: 0px;
+  top: 187px;
+  background: rgba(30, 30, 30, 0.91);
+}
+
+.btn-create-setlist {
+top:370px;
+width: 226px;
+height: 51px;
+
+
+}
+
+
+.presets-label{
+
+margin-left: 15px;
+text-decoration: underline;
+text-decoration-color:#A31FA6;
+text-underline-position: under;
+
+}
+
+
+.cancel-icon{
+cursor:pointer;
+position: absolute;
+width: 25px;
+height: 25px;
+left: 15px;
+top: 15px;
+fill: #3D3939;
+
+}
+
+.feedback-label{
+
+position: absolute;
+width: 142px;
+height: 25px;
+left: 15px;
+top: 60px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+
+color: #000000;
+}
+
+.btn-add-friends{
+  margin-top: 135px;
+  width: 226px;
+  height: 51px;
+}
+
+.help-label{
+
+position: absolute;
+width: 164px;
+height: 25px;
+left: 15px;
+top: 91px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+
+color: #000000;
+}
+.share-label{
+  position: absolute;
+width: 142px;
+height: 25px;
+left: 15px;
+top: 123px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+
+color: #000000;
+}
+
+.log-out-label{
+  position: absolute;
+width: 142px;
+height: 25px;
+left: 15px;
+top: 154px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+
+color: #000000;
+}
+
+.triangle-icon{
+  position: absolute;
+left: 48.61%;
+right: 46.61%;
+top: 46.25%;
+fill: black;
+margin-left: 2px
+}
+
+.lime-1{
+  position: absolute;
+width: 360px;
+height: 0px;
+left: 0px;
+top:50px;
+border: 0.7px solid #ACA8A8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+transform: rotate(0.16deg);
+}
+
+.setlist-name-input-component {
+	position: absolute;
+	width: 271px;
+	height: 11px;
+	left: 42px;
+	top: 501px;
+	opacity: 0.9;
+}
+
+.cursor {
+	position: absolute;
+	width: 30px;
+	height: 0px;
+	left: 42px;
+	top: 474px;
+	opacity: 0.6;
+	border: 0.5px solid #FFFFFF;
+	transform: rotate(90deg);
+}
+
+.setlist-name-input {
+	width: 200px;
+	height: 47px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 27px;
+	opacity: 0.6;
+}
+
+.setlist-name{
+
+}
+
+.embed-responsive{
+  margin-top:80px;
+  height:100%;
+}
+
+
+
+
+.name-prompt-label {
+	position: absolute;
+	width: 218px;
+	height: 23px;
+	left: 42px;
+	top: 515px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+}
+
+.rectangle-1 {
+	position: absolute;
+	width: 360px;
+	height: 302px;
+	left: 0px;
+	top: 146px;
+	background: rgba(30, 30, 30, 0.91);
+}
+
+.line-1 {
+	position: absolute;
+	width: 360px;
+	height: 0px;
+	left: 0px;
+	top: 193px;
+	border: 0.7px solid #ACA8A8;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transform: rotate(0.16deg);
+}
+
+/*
+
+.presets-label {
+	position: absolute;
+	width: 56px;
+	height: 23px;
+	left: 14px;
+	top: 160px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+}
+
+*/
+
+.crowd-pleaser-label {
+	position: absolute;
+	width: 84px;
+	height: 23px;
+	left: 26px;
+	top: 307px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 12px;
+	color: #FFFFFF;
+}
+
+.member-card{
+  position: relative;
+  background: linear-gradient(103.4deg, #2F2CC7 48.04%, #3B49C5 100.55%);
+  border-radius: 10px;
+  height: 59px;
+  margin-top: 7%;
+  width:300px;
+  right:6px;
+  overflow: hidden;
+
+
+
+  .member-name{
+    position: relative;
+    font-size: 18px;
+    font-weight: normal;
+    opacity: .9;
+    top: 20px;
+    left:80px;
+
+  }
+
+  .member-img{
+    position: absolute;
+    height:44px;
+    width:44px;
+    border-radius:200px;
+    margin-top: 7px;
+    margin-left:12px;
+  }
+
+  .member-remove{
+    fill: #FFFFFF;
+    opacity: 0.8;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-left: 250px;
+    cursor:pointer;
+  }
+}
+
+
+.invite-friends-label {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+  font-size:14px;
+	/* identical to box height */
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.line-2 {
+	position: absolute;
+	width: 57px;
+	height: 0px;
+	left: 12px;
+	top: 182px;
+	border: 2px solid #A31FA6;
+}
+
+.img-crowd-pleaser-background {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 29px;
+	top: 223px;
+	background: #FFFFFF;
+  cursor:pointer;
+}
+
+.img-crowd-pleaser {
+  cursor:pointer;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 29px;
+	top: 223px;
+	background: linear-gradient(0deg, rgba(30, 30, 30, 0.25), rgba(30, 30, 30, 0.25));
+//border: 20px solid #E149E4;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.invite-only-label {
+	position: absolute;
+	width: 72px;
+	height: 16px;
+	left: 14px;
+	top: 110px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
+}
+
+.invite-only-rdo {
+	position: absolute;
+	width: 39px;
+	height: 41px;
+	left: 120.65px;
+	top: 137.99px;
+	transform: rotate(179.09deg);
+}
+
+.add-friends-icon {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 317px;
+	top: 106px;
+  cursor:pointer;
+}
+
+/*
+.friends-icon-component {
+	position: absolute;
+	width: 56px;
+	height: 40px;
+	left: 283px;
+	top: 20px;
+}
+
+*/
+
+.configure-preset-icon{
+  position: absolute;
+  top:100px;
+}
+
+.help-text{
+  position:absolute;
+  top:55px;
+  color:white;
+  background-color: inherit;
+  border:none;
+  width:90%;
+  height:70%;
+}
+
+.configure-preset-label{
+position: absolute;
+width: 61px;
+height: 15px;
+left: 17px;
+top: 109px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.messenger-icon{
+  position: relative;
+  padding:10px;
+  top:40px;
+}
+
+.twitter-icon{
+  position: relative;
+  padding:10px;
+  top:40px;
+}
+
+.whatsapp-icon{
+  position: relative;
+  padding:10px;
+  top:40px;
+}
+
+.instagram-icon{
+  position: relative;
+  padding:8px;
+  top:40px;
+}
+
+.btn-done{
+  background: linear-gradient(180deg, #A31FA6 0%, #A31FA6 100%);
+  mix-blend-mode: normal;
+  border-radius: 100px;
+  height:40px;
+  width:191px;
+  position: absolute;
+left: 20.75%;
+right: 21.8%;
+top: 82.62%;
+cursor:pointer;
+}
+
+.lbl-done{
+  position: absolute;
+left: 36.51%;
+right: 30.69%;
+top: 23.26%;
+bottom: 17.93%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;
+}
+
+.scroller {
+	position: absolute;
+	width: 5px;
+	height: 70px;
+	left: 348px;
+	top: 206px;
+	background: #C4C4C4;
+	border-radius: 16px;
+}
+
+//End
+
+.member-count{
+  margin-top:-35px;
+  margin-right: 55px;
+}
+
+
+.session{
+  padding-bottom: 300px;
+  margin-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+#link{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #777777;
+}
+
+.share-session{
+font-family: 'Montserrat', sans-serif;
+  //width: 100%;
+  // margin: auto;
+  padding-bottom: 300px;
+}
+
+// .share-session #link{
+//   // width: 250px;
+//   //margin: auto;
+// }
+
+.setlist-logo{
+  margin-left:auto;
+  margin-right:28px;
+  width:200px;
+  display:block;
+  margin-top:170px;
+}
+
+.reset-heading{
+  margin-bottom: 20px;
+}
+
+.logo{
+  width:200px;
+  height: 200px;
+}
+
+
+.setlist-logo-no-text{
+  //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  //border-radius: 2000px;
+  //margin:0px;
+
+}
+
+.share-session{
+  width: 50%;
+  height:100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.New-Session{
+  font-family:"Montserrat";
+  font-size:10px;
+  width:650px;
+  margin-left:60px;
+  margin-right:auto;
+  display:block;
+  text-align: center;
+  color:white;
+}
+
+.spotify-login{
+  margin-right:auto;
+  margin-left:auto;
+  width:270px;
+  margin-top:50px;
+  padding:0;
+
+}
+
+.apple-login{
+  position: relative;
+  text-align: center;
+  margin-right:auto;
+  margin-left:auto;
+  height: 50px;
+  width:270px;
+  margin-top:30px;
+  padding:0;
+  :hover{
+    opacity: 0.2;
+  }
+}
+
+.apple-login .soon{
+  position: absolute;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 83px;
+  float: center;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.apple-login:hover .soon{
+  visibility: visible;
+}
+
+.apple-pic{
+  position: relative;
+  margin-right:auto;
+  margin-left:auto;
+  height: 50px;
+  width:270px;
+}
+
+.play-console{
+
+margin-top:83px;
+
+
+
+
+}
+
+
+.footer{
+
+
+
+ul{
+  list-style-type: none;
+  margin-left:auto;
+  margin-right:auto;
+  width:115px
+
+}
+
+li{
+  float:left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: underline;
+    margin-top:10px;
+}
+
+}
+
+.loading{
+  margin-top: 80px;
+
+}
+
+  .error {
+    color: @error-color;
+    &, h2 { font-weight: bold; }
+  }
+
+.jumbotron{
+  color:white;
+}
+
+.session-link{
+  font-family: 'Montserrat', sans-serif;
+  width: 145%;
+  color: white;
+  font-size: 8px;
+
+}
+
+
+.lds-roller {
+  display: inline-block;
+  position:relative;
+  width: 64px;
+  height: 64px;
+  top:200px;
+  z-index:0;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -3px 0 0 -3px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.feather feather-clipboard{
+  margin-left:5px;
+}
+
+.camera{
+  margin:100px;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 30px;
+  top: 28px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #C4C4C4;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 30px;
+  width: 30px;
+
+  }
+
+.button{
+  height: 30px;
+  width: 30px;
+}
+
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+  height: 30px;
+  width: 30px;
+  .button{
+    width: 30px;
+  }
+
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  z-index:100;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #1E1E1E;
+  padding: 2.5em .5em 0;
+  font-size: 1.3em;
+  border-right: 0.5px solid #C4C4C4;
+  z-index: 5000
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.3em;
+  z-index:100;
+  .menu-item{
+    color:white;
+  }
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  z-index:100;
+  cursor:pointer;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+
+}
+
+.home-icon{
+  fill:white;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+}
+
+.home-label{
+  position: absolute;
+  margin-top:0px;
+  cursor:pointer;
+  font-size:13pt;
+}
+
+.settings-icon{
+  fill:white;
+  width: 30px;
+  height: 30px;
+  cursor:pointer;
+}
+
+.settings-label{
+  position: absolute;
+  margin-top:0px;
+  cursor:pointer;
+  font-size:13pt;
+  color:white;
+}
+
+.new-setlist-label{
+  position: absolute;
+  margin-top:0px;
+  cursor:pointer;
+  font-size:13pt;
+  color:white;
+}
+
+.setlist-list-label{
+  margin-top:40px;
+}
+
+.back-arrow{
+  fill:white;
+  top:25px;
+}
+
+session-name{
+  height:30px;
+}
